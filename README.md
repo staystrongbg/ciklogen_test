@@ -8,3 +8,6 @@
 - ja bih, dakle, da se na klik na ```link``` iz navigacije promeni i stranica ne samo ```url``` i to kao CSR ne SSR
 
 - obrati paznju na ```navigation.js``` i na ```[url].js```
+
+
+link: https://ciklogen-next.vercel.app/
