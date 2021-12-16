@@ -1,0 +1,180 @@
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 80%;
+}
+
+/* Create four equal columns that sits next to each other  STAVI PO DVE DA BUDU U REDU*/
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* modal */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  /* animation: sizeUp 0.5s ease; */
+  z-index: 99;
+}
+
+@keyframes sizeUp {
+  0% {
+    transform: scale(0.1);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: #000;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  background: #fff;
+  /* border-radius: 50%; */
+  height: 30px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+}
+.close-modal:hover {
+  fill: #fff;
+}
+
+.imgContainer {
+  position: relative;
+  height: 95%;
+  width: auto;
+}
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gridImg {
+  cursor: pointer;
+  /* border-radius: 0.5rem; */
+}
+
+/* media querry for different screen sizes */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    /* padding-bottom: 4px; */
+  }
+  .imgContainer {
+    width: 98%;
+    height: auto;
+  }
+  .modal-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .close-modal {
+    top: -5px;
+    right: -5px;
+    color: #000;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    background: #fff;
+    border-radius: 50%;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    width: 20px;
+  }
+}
+.btns {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #f3f3f3;
+}
+
+.btn {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 2rem;
+  font-weight: 100;
+  border: none;
+  background-color: transparent;
+}
+.btn:hover {
+  opacity: 1;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-height: 600px) {
+  .modal-img {
+    height: 100vh;
+    width: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      padding-bottom: 4px;
+    }
+    .modal-img {
+      width: 100vw;
+      height: auto;
+    }
+    .story {
+      width: 100vw;
+    }
+  }
+}
