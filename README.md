@@ -1,4 +1,4 @@
-# C I lJ
+# problem
 
 - hocu dinamicki da kreiram stranice koristeci ```url``` properti iz ```data``` kao ime za svaku...
 - da bih izbegao ako je moguce "hardkodovanje" svake stranice (x.js, y.js, z.js...)
