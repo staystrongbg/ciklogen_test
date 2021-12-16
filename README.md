@@ -1,6 +1,6 @@
 # problem
 
-- hocu dinamicki da kreiram stranice koristeci ```url``` properti iz ```data``` kao ime za svaku...
+- hocu dinamicki da kreiram stranice koristeci ```url``` properti iz ```data``` kao rutu za svaku...
 - da bih izbegao ako je moguce "hardkodovanje" svake stranice (x.js, y.js, z.js...)
 - u tome mislim da sam uspeo delimicno.
 - **SUCCESS** | kada hoces sa indexa na neku stranicu, bilo preko navigacije ili na ```button``` 'read more' to sljaka. 
