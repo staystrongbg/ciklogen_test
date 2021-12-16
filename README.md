@@ -1,4 +1,4 @@
-# cilJ
+# C I lJ
 
 - hocu dinamicki da kreiram stranice koristeci ```url``` properti iz ```data``` kao ime za svaku...
 - u tome mislim da sam uspeo. Kada hoces sa indexa na neku stranicu, bilo preko navigacije ili na ```button``` 'read more' to sljaka.
